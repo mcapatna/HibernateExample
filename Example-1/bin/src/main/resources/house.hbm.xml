@@ -1,0 +1,12 @@
+<hibernate-mapping package="com.mcapatna.hibernate.model">
+	<class name="GameOfThroneGreatHouses">
+		<id name="houseId" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="name"></property>
+		<property name="motto"></property>
+		<property name="commonSaying"></property>
+		<property name="region"></property>
+		<property name="generalMark"></property>
+		</class>
+</hibernate-mapping>
