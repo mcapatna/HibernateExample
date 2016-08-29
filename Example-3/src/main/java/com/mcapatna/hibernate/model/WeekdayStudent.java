@@ -10,6 +10,14 @@ public class WeekdayStudent extends Student {
 	private String percentage;
 	private int yoe;
 
+	public WeekdayStudent(String sname, String city, String status, double totalfee, String qualification,
+			String percentage, int yoe) {
+		super(sname, city, status, totalfee);
+		this.qualification = qualification;
+		this.percentage = percentage;
+		this.yoe = yoe;
+	}
+
 	public String getQualification() {
 		return qualification;
 	}

@@ -12,6 +12,18 @@ public class Student {
 	private String status;
 	private double totalfee;
 
+	public Student() {
+		super();
+	}
+
+	public Student(String sname, String city, String status, double totalfee) {
+		super();
+		this.sname = sname;
+		this.city = city;
+		this.status = status;
+		this.totalfee = totalfee;
+	}
+
 	public int getSid() {
 		return sid;
 	}

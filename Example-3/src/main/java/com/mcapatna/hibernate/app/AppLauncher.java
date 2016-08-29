@@ -17,7 +17,7 @@ public class AppLauncher {
 		SessionFactory sessionFactory = HibernateUtil.getFactory();
 		Session session = sessionFactory.openSession();
 		Transaction transaction = session.beginTransaction();
-		Student student = new Student();
+		Student student = new Student("A", "City", "OK", 12.3);
 		session.save(student);
 		transaction.commit();
 		session.close();

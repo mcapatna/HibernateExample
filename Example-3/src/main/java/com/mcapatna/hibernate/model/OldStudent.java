@@ -10,6 +10,14 @@ public class OldStudent extends Student {
 	private String ocemail;
 	private double octc;
 
+	public OldStudent(String sname, String city, String status, double totalfee, String ocompany, String ocemail,
+			double octc) {
+		super(sname, city, status, totalfee);
+		this.ocompany = ocompany;
+		this.ocemail = ocemail;
+		this.octc = octc;
+	}
+
 	public String getOcompany() {
 		return ocompany;
 	}

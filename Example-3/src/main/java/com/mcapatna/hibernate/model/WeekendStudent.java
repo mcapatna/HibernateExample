@@ -7,8 +7,16 @@ package com.mcapatna.hibernate.model;
  */
 public class WeekendStudent extends Student {
 	private String wcompany;
-	private String ecemail;
+	private String wcemail;
 	private double wctc;
+
+	public WeekendStudent(String sname, String city, String status, double totalfee, String wcompany, String ecemail,
+			double wctc) {
+		super(sname, city, status, totalfee);
+		this.wcompany = wcompany;
+		this.wcemail = ecemail;
+		this.wctc = wctc;
+	}
 
 	public String getWcompany() {
 		return wcompany;
@@ -18,12 +26,12 @@ public class WeekendStudent extends Student {
 		this.wcompany = wcompany;
 	}
 
-	public String getEcemail() {
-		return ecemail;
+	public String getWcemail() {
+		return wcemail;
 	}
 
-	public void setEcemail(String ecemail) {
-		this.ecemail = ecemail;
+	public void setWcemail(String wcemail) {
+		this.wcemail = wcemail;
 	}
 
 	public double getWctc() {

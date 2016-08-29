@@ -6,12 +6,21 @@ package com.mcapatna.hibernate.model;
  *
  */
 public class CurrentStudent extends Student {
+
 	private double feebal;
 	private String timing;
 	private String branch;
 
 	public double getFeebal() {
 		return feebal;
+	}
+
+	public CurrentStudent(String sname, String city, String status, double totalfee, double feebal, String timing,
+			String branch) {
+		super(sname, city, status, totalfee);
+		this.feebal = feebal;
+		this.timing = timing;
+		this.branch = branch;
 	}
 
 	public void setFeebal(double feebal) {
